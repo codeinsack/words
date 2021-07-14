@@ -1,6 +1,23 @@
 <template>
-  <AInput placeholder="Find a word" />
-  <AButton>Submit</AButton>
+  <v-app>
+    <v-main>
+      <HelloWorld/>
+    </v-main>
+  </v-app>
 </template>
 
-<style lang="scss"></style>
+<script>
+import HelloWorld from './components/HelloWorld.vue'
+
+export default {
+  name: 'App',
+
+  components: {
+    HelloWorld,
+  },
+
+  data: () => ({
+    //
+  }),
+}
+</script>
